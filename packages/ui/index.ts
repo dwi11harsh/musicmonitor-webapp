@@ -61,6 +61,6 @@ export * from "./selectors/getSearchBarState";
 export * from "./selectors/getMapMarkerState";
 
 export const BASE_URL =
-  "http://ec2-18-169-237-28.eu-west-2.compute.amazonaws.com:3002";
+  "https://api.musicmonitor.io";
 
 // export const BASE_URL = "http://localhost:3002";
