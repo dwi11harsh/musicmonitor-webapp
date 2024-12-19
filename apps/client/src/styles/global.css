@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "rsuite/dist/rsuite.css";
+@import "react-date-range/dist/styles.css";
+@import "react-date-range/dist/theme/default.css";
+
+:root,
+body,
+html {
+  height: 100%;
+}
+
+.calendarWrap {
+  display: inline-block;
+  position: relative;
+}
+
+.calendarElement {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+  top: 40px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}

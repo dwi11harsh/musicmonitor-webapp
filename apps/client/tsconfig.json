@@ -1,0 +1,13 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.setup.js",
+    "src/redshift/redshift.ts",
+    "src/pages/api/auth/[...nextauth].js",
+    "src/pages/config.js"
+  ],
+  "exclude": ["node_modules"]
+}
