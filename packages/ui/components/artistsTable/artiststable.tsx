@@ -64,6 +64,7 @@ export function ArtistsTable() {
   }, [queryName]);
 
   if (artistsData) {
+    console.log("ARTISTS TABLE DATA: ", artistsData);
     return (
       <div>
         <div className="sm:max-h-[540px] lg:max-h-full relative overflow-auto shadow-md sm:rounded-lg">
@@ -134,7 +135,6 @@ export function ArtistsTable() {
 
 function formatDate(inputString: string): string {
   const indexOfT = inputString.indexOf("T");
-
   if (indexOfT !== -1) {
     return inputString.slice(0, indexOfT);
   } else {
